@@ -1,0 +1,14 @@
+<div class="d-flex justify-content-center">
+    <h2>Github Users</h2>
+    <br>
+    <br>
+
+</div>
+<!-- <h3><a href=" https://api.github.com/resource?page=2 ">Users</a></h3> -->
+
+<div class="container ">
+    <h3>Select user :</h3>
+    <select (change)="Filter($event)">
+          <option *ngFor="let item of githubUsers" >{{item.name}}</option>
+</select>
+</div>
